@@ -1,1 +1,1 @@
-{"usuarios":[]}
+{"usuarios":[{"id":1,"email":"vinicios@vinicios.com","senha":"123456","nome":"Vinicios","endereco":"Rua x","complemento":"comp","cep":"2860000"},{"id":2,"email":"vinicios@vinicios.com.br","senha":"123456","nome":"Vinicios","endereco":"Rua x","complemento":"comp","cep":"2860000"}]}

@@ -81,6 +81,58 @@ server.post('/public/login', (req, res) => {
   res.status(200).json({ access_token, user })
 })
 
+server.get('/public/livros/lancamentos', (req, res) => {
+  res.status(200).json([
+    {
+      autor: 'Tárcio Zemel',
+      descricao: 'Técnicas e ferramentas que fazem a diferença nos seus estilos',
+      imagem: '/imagens/livros/css.jpg',
+      nome: 'CSS Eficiente',
+      preco: 29.9
+    },
+    {
+      autor: 'Sass',
+      descricao: 'Aprendendo pré-processadores CSS',
+      imagem: '/imagens/livros/sass.jpg',
+      nome: 'Natan Souza',
+      preco: 29.9
+    },
+    {
+      autor: 'Diego Eis',
+      descricao: 'O caminho das pedras para ser um dev Front-End',
+      imagem: '/imagens/livros/frontend.jpg',
+      nome: 'Guia Front-End',
+      preco: 29.9
+    },
+  ])
+})
+
+server.get('/public/livros/mais-vendidos', (req, res) => {
+  res.status(200).json([
+    {
+      autor: 'Thiago da Silva Adriano',
+      descricao: 'Melhore suas aplicações JavaScript',
+      imagem: '/imagens/livros/typescript.jpg',
+      nome: 'Guia prático de TypeScript',
+      preco: 29.9
+    },
+    {
+      autor: 'Akira Hanashiro',
+      descricao: 'A revolucionária linguagem de consulta e manipulação de dados para APIs',
+      imagem: '/imagens/livros/graphql.jpg',
+      nome: 'GraphQL',
+      preco: 29.9
+    },
+    {
+      autor: 'Vinícius Carvalho',
+      descricao: 'PostgreSQL',
+      imagem: '/imagens/livros/postgre.jpg',
+      nome: 'PostgreSQL',
+      preco: 29.9
+    },
+  ])
+})
+
 server.use(/^(?!\/public).*$/, (req, res, next) => {
   if (req.headers.authorization === undefined || req.headers.authorization.split(' ')[0] !== 'Bearer') {
     const status = 401
