@@ -1,18 +1,21 @@
+![Integrando seu projeto React com APIs](thumbnail.png)
+
+# AluraBooks
+
+O AluraBooks é uma loja virtual que vende livros da Casa do Código. 
+É um MVP que tá só começando e ainda tem muitas funcionalidades novas para serem desenvolvidas.
+
 # JSONServer + JWT Auth
 
-Uma API Rest mockada, utilizando json-server e JWT.
+Essa é ma API Rest mockada, utilizando json-server e JWT.
 
-
-End-points implementados: login,registrar,pedidos
-
-## Instalação
+## 🛠️ Instalação
 
 ```bash
 $ npm install
 $ npm run start-auth
 ```
-
-## Como se registrar?
+## 🛠️ Como se registrar?
 
 Você pode fazer isso efetuando uma requisição post para:
 
@@ -36,7 +39,7 @@ Com os seguintes dados:
 
 Repare que o e-mail é um campo único e usuários com e-mails duplicados não serão persistidos.
 
-## Como fazer login?
+## 🛠️ Como fazer login?
 
 Você pode fazer isso efetuando uma requisição post para:
 
@@ -70,3 +73,7 @@ E então, adicionar este mesmo token ao header das próximas requisições:
 ```
 Authorization: Bearer <ACCESS_TOKEN>
 ```
+
+## 📚 Mais informações do curso
+
+O AluraBooks é o projeto utilizado durante toda a formação, e essa API será utilizada em vários cursos diferentes :)
